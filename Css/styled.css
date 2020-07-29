@@ -1,0 +1,143 @@
+body {
+    margin: 0px;
+    font-size: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #183349;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#navbarSupportedContent {
+    position: absolute;
+    right: 10vh;
+}
+
+.nav-link:hover {
+    color: gold !important;
+}
+
+#quote-btn {
+    width: 30vh;
+    height: 5vh;
+}
+
+.container-fluid {
+    /* height: 90vh; */
+    background-image: url("/images/lamborghini_huracan_lp_610_4_adv1_wheels_tuning_5_2l_v10_awd_rwd__ldft_full_4k_4000p-wallpaper-1600x900.jpg") !important;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.super-text-con {
+    width: 75vh;
+    /* border: 1px solid red; */
+}
+
+.super-text-con .lead {
+    font-size: 190%;
+    color: white;
+    text-shadow: -1px -2px 2px black;
+}
+
+.super-text-con .detail {
+    color: white;
+    width: 95%;
+}
+
+.explore-btn {
+    width: 40vh;
+    height: 6vh;
+}
+
+.form-con-super {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90vh;
+    /* border: 1px solid red; */
+}
+
+.form-con {
+    background: #1833498f !important;
+    border-radius: 0px;
+}
+
+.form-con label {
+    color: white;
+}
+
+.section2 {
+    background-color: #152633;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section2 .services-box {
+    background-color: white;
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services-box .icon-box .fa {
+    font-size: 200%;
+}
+
+@media screen and (max-width:1044px) {
+
+    .container-fluid {
+        /* height: 90vh; */
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media screen and (max-width:1024px) {
+
+    .container-fluid {
+        background-size: 100% 100%;
+    }
+
+
+}
+
+@media screen and (max-width:768px) {
+
+    #navbarSupportedContent {
+        position: relative;
+        left: 0;
+    }
+
+    #quote-btn {
+        width: 30vh;
+        height: 5vh;
+    }
+
+    .super-text-con {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-con-super {
+        width: 100%;
+    }
+
+}
