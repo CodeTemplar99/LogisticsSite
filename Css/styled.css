@@ -20,89 +20,208 @@ body {
     right: 10vh;
 }
 
+.nav-link {
+    font-family: 'Russo One', sans-serif;
+}
+
 .nav-link:hover {
     color: gold !important;
 }
 
 #quote-btn {
+    font-family: 'Russo One',
+        sans-serif;
     width: 30vh;
     height: 5vh;
 }
 
 .container-fluid {
     /* height: 90vh; */
-    background-image: url("/images/lamborghini_huracan_lp_610_4_adv1_wheels_tuning_5_2l_v10_awd_rwd__ldft_full_4k_4000p-wallpaper-1600x900.jpg") !important;
-    background-position: center;
-    background-size: 100%;
+    background-image: url("/images/Truck-road-beautiful-scenery-1280x640.jpg") !important;
+    background-color: #183349;
+    background-position: top;
+    background-size: 100% 60%;
     background-repeat: no-repeat;
 }
 
 .super-text-con {
-    width: 75vh;
+    /* width: 75%; */
     /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .super-text-con .lead {
-    font-size: 190%;
+    width: 60%;
+    font-size: 390%;
+    font-family: 'Orbitron',
+        sans-serif;
+    font-family: 'PT Sans Caption',
+        sans-serif;
+
+    text-align: center;
     color: white;
     text-shadow: -1px -2px 2px black;
 }
 
 .super-text-con .detail {
     color: white;
-    width: 95%;
+    width: 55%;
+    text-align: center;
 }
 
 .explore-btn {
-    width: 40vh;
+    /* width: 40vh; */
     height: 6vh;
+    font-family: 'Aclonica',
+        sans-serif;
+        font-size: 100%;
 }
 
-.form-con-super {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90vh;
-    /* border: 1px solid red; */
+.section1-a-super {
+    background: transparent;
+    /* background-color: #152633 !important; */
 }
 
-.form-con {
-    background: #1833498f !important;
-    border-radius: 0px;
-}
-
-.form-con label {
-    color: white;
-}
-
-.section2 {
-    background-color: #152633;
+.section1-a {
+    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.section2 .services-box {
-    background-color: white;
+.section1-a .mode-box {
+    background-color: #1833496e;
+    /* border: 1px solid #17a2b8; */
     width: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* box-shadow: 0px 1px 15px black; */
+    box-shadow: 4px 4px 20px black;
+    ;
 }
 
-.services-box .icon-box .fa {
+.mode-box .icon-box .fa {
     font-size: 200%;
+    color: white;
 }
 
-@media screen and (max-width:1044px) {
+.mode-box-text {
+    font-family: 'Almarai',
+        sans-serif;
+}
+
+.services-lead {
+    font-size: 200%;
+    font-family: 'Bebas Neue',
+        cursive;
+}
+
+.services-detail {
+    font-size: 100%;
+    font-family: 'MuseoModerno',
+        cursive;
+}
+
+.small-dot {
+    background-color: #17a2b8;
+    width: 5px;
+    height: 5px;
+}
+
+.big-dot {
+    background: #183349;
+    width: 10px;
+    height: 10px;
+}
+
+.services-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-box {
+    width: 35%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.service-image-box {
+    height: 100px;
+    width: 400px;
+    border: 1px solid red;
+}
+
+.about-flex {
+    background-color: #17a2b8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text-div {
+    width: 40% !important;
+}
+
+.about-company {
+    font-size: 200%;
+    font-family: 'Lobster',
+        cursive;
+
+}
+
+.about-texts {
+    font-family: 'Courgette',
+        cursive;
+}
+
+.about-list-div {
+    width: 30%;
+}
+
+.about-list-div a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Concert One',
+        cursive;
+}
+
+.collapse-text {
+    font-family: 'Fira Sans Extra Condensed',
+        sans-serif;
+}
+
+.contact-flex {
+    /* background: linear-gradient(to top, #183349, #17a2b8); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.address-con {
+    width: 25%;
+}
+
+.form-con {
+    width: 45%;
+}
+
+/* ------------------------------------- */
+@media screen and (max-width:1440px) {
 
     .container-fluid {
         /* height: 90vh; */
-        background-size: 100% 100%;
+        background-size: 100% 50%;
     }
 
 
@@ -111,10 +230,22 @@ body {
 @media screen and (max-width:1024px) {
 
     .container-fluid {
-        background-size: 100% 100%;
+        background-size: 100% 40%;
     }
 
+    .super-text-con .lead {
+        width: 60%;
+        font-size: 300%;
+    }
 
+    .services-box {
+        width: 40%;
+    }
+
+    .service-image-box {
+        height: 100px;
+        width: 600px;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -129,6 +260,10 @@ body {
         height: 5vh;
     }
 
+    .container-fluid {
+        background-size: 100% 35%;
+    }
+
     .super-text-con {
         width: 100%;
         display: flex;
@@ -136,8 +271,74 @@ body {
         align-items: center;
     }
 
-    .form-con-super {
+    .super-text-con .lead {
+        width: 60%;
+        font-size: 250%;
+    }
+
+
+
+    .services-box {
+        width: 40%;
+        flex-direction: column;
+    }
+
+    .service-image-box {
+        height: 100px;
         width: 100%;
     }
 
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-text-div {
+        width: 75% !important;
+        padding: 5px !important;
+    }
+
+    .about-list-div {
+        width: 75% !important;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .super-text-con .lead {
+        width: 90%;
+        font-size: 250%;
+    }
+
+    .services-box {
+        width: 90%;
+    }
+
+
+    .about-text-div,
+    .about-list-div {
+        width: 95% !important;
+    }
+
+    about-list-div {
+        padding: 5px !important;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .mode-box {
+        margin: 0% 0% 10% 0% !important;
+    }
+
+    .super-text-con .lead {
+        width: 100%;
+        font-size: 200%;
+    }
+
+    .services-box {
+        width: 100%;
+    }
+
+    .about-text-div,
+    .about-list-div {
+        width: 100% !important;
+    }
 }
