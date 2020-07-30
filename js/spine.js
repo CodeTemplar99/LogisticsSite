@@ -1,19 +1,18 @@
-// side bar
-let isOpen = false;
-
-function showSideBar() {
-    document.querySelector('#navbarSupportedContent').style.display = isOpen ? "none" : "block"
-    isOpen = !isOpen;
-
+function scrollToService() {
+    document.getElementById("service-view").scrollIntoView();
+    console.log("scrolled")
 }
 
-// $(".show-modal").click(function () {
-//     $('modal').modal('show')
-// });
 
-// $('.show-modal').click(function showModal() {
-//         $('#myModal').modal('show')
+function scrollToInfo() {
+    document.getElementById("about-view").scrollIntoView();
+    console.log("scrolled")
+}
 
-//     }
-//     showModal();
-// )
+function scrollToContact() {
+    document.getElementById("contact-view").scrollIntoView();
+    console.log("scrolled")
+}
+// document
+//     .getElementById('kristen-wiig')
+//     .scrollIntoView({ behavior: 'smooth' });

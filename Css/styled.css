@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-size: 100%;
@@ -22,6 +26,7 @@ body {
 
 .nav-link {
     font-family: 'Russo One', sans-serif;
+    cursor: pointer;
 }
 
 .nav-link:hover {
@@ -76,7 +81,7 @@ body {
     height: 6vh;
     font-family: 'Aclonica',
         sans-serif;
-        font-size: 100%;
+    font-size: 100%;
 }
 
 .section1-a-super {
@@ -104,6 +109,14 @@ body {
     /* box-shadow: 0px 1px 15px black; */
     box-shadow: 4px 4px 20px black;
     ;
+}
+
+.section1-a .mode-box:hover {
+    background: #183349;
+    /* background: linear-gradient(to top left, #183349, #17a2b8);  */
+    box-shadow: 0px 0px 0px 0px !important;
+    transition: box-shadow 0.3s;
+    transition: background 2.2s;
 }
 
 .mode-box .icon-box .fa {
@@ -160,8 +173,13 @@ body {
     border: 1px solid red;
 }
 
-.about-flex {
+#about-view {
+
     background-color: #17a2b8;
+}
+
+.about-flex {
+    background: transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,8 +218,12 @@ body {
         sans-serif;
 }
 
+.contact-flex-super {
+
+    background: linear-gradient(to left, #183349, #17a2b8);
+}
+
 .contact-flex {
-    /* background: linear-gradient(to top, #183349, #17a2b8); */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -212,8 +234,75 @@ body {
     width: 25%;
 }
 
-.form-con {
+.map-con {
+    height: 20vh;
+}
+
+.form-con-super {
     width: 45%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.lead2 {
+    color: white !important;
+}
+
+.form-con {
+    background-color: #17a3b870;
+    width: 75%;
+}
+
+.form-con label {
+    color: white;
+}
+
+.form-con textarea {
+    height: 20vh;
+    resize: none;
+}
+
+.form-con button {
+    width: 100%;
+}
+
+.footer-super {
+    background-color: #183349 !important;
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-brand-con {
+    width: 45%;
+}
+
+.footer-flex .brand {
+    color: white !important;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+.footer-nav-con {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.footer-nav-con a {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Concert One',
+        cursive;
+}
+
+.footer-nav-con a:hover {
+    color: #17a2b8 !important;
 }
 
 /* ------------------------------------- */
@@ -256,8 +345,8 @@ body {
     }
 
     #quote-btn {
-        width: 30vh;
-        height: 5vh;
+        width: auto;
+        height: auto;
     }
 
     .container-fluid {
@@ -300,6 +389,32 @@ body {
     .about-list-div {
         width: 75% !important;
     }
+
+    .contact-flex {
+        flex-direction: column-reverse;
+    }
+
+    .address-con {
+        width: 80%;
+    }
+
+    .form-con-super {
+        width: 80%;
+        justify-content: center;
+    }
+
+    .form-con {
+        background-color: #17a3b870;
+        width: 95%;
+    }
+
+    .footer-brand-con {
+        width: 30%;
+    }
+
+    .footer-nav-con {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -320,6 +435,42 @@ body {
 
     about-list-div {
         padding: 5px !important;
+    }
+
+    .address-con {
+        width: 100%;
+    }
+
+    .form-con-super {
+        width: 100%;
+    }
+
+    .form-con {
+        width: 100%;
+    }
+
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .footer-brand-con {
+        width: 100%;
+    }
+
+    .footer-flex .brand {
+        color: white !important;
+        font-size: 150%;
+        font-weight: bold;
+    }
+
+    .footer-nav-con {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .powered {
+        text-align: center !important;
+        font-size: 90%;
     }
 }
 

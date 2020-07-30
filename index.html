@@ -26,40 +26,41 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
-        <div class="container-fluid p-0">
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-                <a class="navbar-brand" href="#">BRAND NAME</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+    <div class="container-fluid p-0 m-0">
+        <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+            <a class="navbar-brand" href="#">BRAND NAME</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item mx-3">
-                            <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link text-white" href="#">Services</a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link text-white" href="#">About Us <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item mx-3">
-                            <a class="nav-link text-white" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="btn btn-info text-white" id="quote-btn" href="#">Request Quote</a>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" href="./index.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" onclick="scrollToService()">Services</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" onclick="scrollToInfo()">About Us</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link text-white" onclick="scrollToContact()">Contact</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-info text-white" id="quote-btn" href="#">Request Quote</a>
 
-                        </li>
-                    </ul>
-                </div>
+                    </li>
+                </ul>
+            </div>
 
-            </nav>
+        </nav>
+        <div class="container-fluid p-0 m-0">
+
             <div
                 class="jumbotron m-0 bg-transparent rounded-0 d-flex  flex-column justify-content-between align-items-center flex-wrap">
                 <div class="jumbotron bg-transparent super-text-con m-0">
@@ -165,7 +166,7 @@
             </div>
 
         </div>
-        <div class="jumbotron bg-white rounded-0 m-0 p-3">
+        <div class="jumbotron bg-white rounded-0 m-0 p-3" id="service-view">
             <div
                 class="jumbotron rounded-0 m-0 p-1 bg-transparent d-flex flex-column align-content-center justify-content-center">
                 <p class="lead text-center m-0 font-weight-bold services-lead">-Services We Offer-</p>
@@ -234,7 +235,7 @@
             </div>
         </div>
 
-        <div class="jumbotron rounded-0 m-0 p-0">
+        <div class="jumbotron rounded-0 m-0" id="about-view">
             <div class="jumbotron p-3 m-0 rounded-0 about-flex">
                 <div class="jumbotron bg-transparent rounded-0 mx-sm-2 about-text-div">
 
@@ -293,22 +294,115 @@
                 </div>
             </div>
         </div>
-        <div class="jumbotron rounded-0 m-0 p-3 contact-flex-super">
+        <div class="jumbotron rounded-0 m-0 p-4 contact-flex-super" id="contact-view">
             <div
                 class="jumbotron rounded-0 m-0 p-1 bg-transparent d-flex flex-column align-content-center justify-content-center">
-                <p class="lead text-center m-0 font-weight-bold services-lead">Get in Touch</p>
-                <h6 class="small mb-2 font-weight-normal text-center services-detail">Lorem ipsum dolor sit.</h6>
+                <p class="lead text-center m-0 font-weight-bold services-lead lead2">Get in Touch</p>
+                <h6 class="small mb-2 font-weight-normal text-center services-detail lead2">Lorem ipsum dolor sit.</h6>
                 <div class="m-0 p-0 d-flex justify-content-center align-items-center">
                     <div class="small-dot rounded-circle mx-sm-1"></div>
                     <div class="small-dot rounded-circle mx-sm-1"></div>
                     <div class="big-dot rounded-circle mx-sm-1"></div>
                 </div>
             </div>
+            <div class="jumbotron bg-transparent rounded-0 m-0 contact-flex">
+                <div class="jumbotron bg-transparent p-1 mb-0 address-con">
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent text-white mb-2 border-0"><i
+                                class="fa fa-map-marker-alt"></i><span class="mx-3 text-capitalize">Address street,
+                                location, Country</span></li>
+                        <li class="list-group-item bg-transparent text-white mb-2 border-0"><i
+                                class="fa fa-phone"></i><span class="mx-3 text-capitalize">+234telephone</span></li>
+                        <li class="list-group-item bg-transparent text-white mb-2 border-0"><i
+                                class="fa fa-mobile-alt"></i><span class="mx-3 text-capitalize">081mobile</span></li>
+                        <li class="list-group-item bg-transparent text-white mb-2 border-0 p-1">
+                            <div class="jumbotron m-0 rounded-0 map-con">
 
-            <div class="jumbotron rounded-0 m-0 p-3 contact-flex">
-                <div class="jumbotron bg-danger mx-sm-2 address-con"></div>
-                <div class="jumbotron bg-danger mx-sm-2 form-con"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="jumbotron bg-transparent p-0 mb-0 form-con-super">
+                    <div class="jumbotron p-4 form-con rounded-0">
+                        <form>
+                            <div class="form-group">
+                                <label>My Name</label>
+                                <input type="text" class="form-control" placeholder="E.g Mark">
+                            </div>
+                            <div class="form-group">
+                                <label>My Email (so we can reach back to you)</label>
+                                <input type="email" class="form-control" placeholder="Email address">
+                            </div>
+                            <div class="form-group">
+                                <label>My Message</label>
+                                <textarea type="text" class="form-control rounded-0"
+                                    placeholder="Write message here"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary rounded-0">Send Message</button>
+                        </form>
+
+                    </div>
+                </div>
             </div>
+        </div>
+
+        <div class="jumbotron rounded-0 m-0 p-2 px-0 footer-super">
+            <div class="footer-flex">
+                <div class="jumbotron bg-transparent mb-0 p-4 footer-brand-con rounded-0">
+                    <P class="lead m-0 text-white brand">BRAND NAME</P>
+                </div>
+                <div class="jumbotron bg-transparent mb-0 p-1 footer-nav-con rounded-0">
+                    <div class="jumbotron bg-transparent m-0 mx-sm-3 p-2">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent text-white mb-0 p-2 border-0">
+                                <p class="m-0 lead font-weight-bold text-uppercase">Contact</p>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white mb-0 border-0 p-2"><i
+                                    class="fa fa-map-marker-alt"></i><span class="mx-3 text-capitalize">Address
+                                    street,
+                                    location, Country</span></li>
+                            <li class="list-group-item bg-transparent text-white mb-0 border-0 p-2"><i
+                                    class="fa fa-phone"></i><span class="mx-3 text-capitalize">+234telephone</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white mb-0 border-0 p-2"><i
+                                    class="fa fa-mobile-alt"></i><span class="mx-3 text-capitalize">081mobile</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white mb-0 border-0 p-2">
+                                <div class="jumbotron m-0 rounded-0 map-con">
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="jumbotron bg-transparent m-0 mx-sm-3 p-2">
+                        <ul class="list-group">
+                            <li class="list-group-item bg-transparent text-white mb-0 p-2 border-0">
+                                <p class="m-0 lead font-weight-bold text-uppercase">Navigation</p>
+                            </li>
+                            <a href="./index.html"
+                                class="list-group-item bg-transparent text-white mb-0 border-0 p-2"></i><span
+                                    class="text-capitalize">Home</span></a>
+                            <a onclick="scrollToService()"
+                                class="list-group-item bg-transparent text-white mb-0 border-0 p-2"><span
+                                    class="text-capitalize">Services</span>
+                            </a>
+                            <a onclick="scrollToInfo()"
+                                class="list-group-item bg-transparent text-white mb-0 border-0 p-2"></i><span
+                                    class="text-capitalize">About Us</span>
+                            </a>
+                            <a onclick="scrollToContact()"
+                                class="list-group-item bg-transparent text-white mb-0 border-0 p-2"></i><span
+                                    class="text-capitalize">Contact</span>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr style="background-color: white;">
+
+            <p class="text-center text-white m-0">Copyright &copy; 2020 fox-access.com | All rights reserved.</p>
+            <p class="text-right text-white m-0 powered">Powered By Tekagon</p>
         </div>
     </div>
 </body>
